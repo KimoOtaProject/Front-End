@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: black;
+  color: white;
 }
 
 .main {
@@ -67,6 +69,7 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+  color: black;
 }
 
 .grid {
@@ -88,25 +91,43 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
+//.card:hover,
+//.card:focus,
+//.card:active {
+//  color: #0070f3;
+//  border-color: #0070f3;
+//}
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
+//.card h2 {
+//  margin: 0 0 1rem 0;
+//  font-size: 1.5rem;
+//}
+//
+//.card p {
+//  margin: 0;
+//  font-size: 1.25rem;
+//  line-height: 1.5;
+//}
 
 .logo {
   height: 1em;
