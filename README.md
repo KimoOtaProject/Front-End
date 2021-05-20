@@ -1,5 +1,8 @@
 KimoOta Project 입니다.
 
+## Settings
+Node 14.17.0
+
 ## 시작하기
 
 ### 1. 개발모드 에서 서버 시작
