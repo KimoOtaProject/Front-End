@@ -1,6 +1,7 @@
 {
   "name": "kimo-ota",
   "version": "0.1.0",
+  "author": "CyanLH",
   "private": true,
   "scripts": {
     "dev": "node server.js",
@@ -9,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "@reduxjs/toolkit": "^1.5.1",
     "antd": "^4.15.5",
     "axios": "^0.21.1",
     "next": "10.2.0",
@@ -16,7 +18,7 @@
     "next-redux-wrapper": "^6.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "redux": "^4.1.0",
+    "react-redux": "^7.2.4",
     "sass": "^1.32.13"
   },
   "devDependencies": {
