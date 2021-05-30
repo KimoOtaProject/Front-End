@@ -1,11 +1,12 @@
 import Head from 'next/head'
-// import Image from 'next/image'
 import Link from 'next/link'
 import Router from "next/router";
+
+import { Button } from 'antd';
+
 import styles from '../styles/Home.module.scss'
 
-export default function Home(props: any) {
-  console.log(props);
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,10 +25,10 @@ export default function Home(props: any) {
         </h1>
         <div className={styles.card}>
           <p>
-            <span>{'<Link />'}를 이용한 이동</span> <Link href="/Home"><a>이동</a></Link>
+            <span>{'<Link/>'}를 이용한 이동</span> <Link href="/Main"><a>이동</a></Link>
           </p>
           <p>
-            <span>{'<button/> 에 Router.push() 메소드'}를 이용한 이동</span> <button onClick={() => Router.push('/Home')}>이동</button>
+            <span>{'<button/> 에 Router.push() 메소드'}를 이용한 이동</span> <Button onClick={() => Router.push('/Main')} type="primary">이동</Button>
           </p>
         </div>
 

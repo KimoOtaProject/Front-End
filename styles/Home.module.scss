@@ -97,7 +97,7 @@
   &:focus,
   &:active {
     color: #0070f3;
-    border-color: #0070f3;
+    //border-color: #0070f3;
   }
 
   h2 {
@@ -113,6 +113,10 @@
       color: #0070f3 !important;
       text-decoration: none;
     }
+    //button {
+    //  color: #313131;
+    //  cursor: pointer;
+    //}
   }
 }
 
