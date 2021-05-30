@@ -1,9 +1,11 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 import Link from 'next/link'
+import Router from "next/router";
 import styles from '../styles/Home.module.scss'
 
-export default function Home() {
+export default function Home(props: any) {
+  console.log(props);
   return (
     <div className={styles.container}>
       <Head>
@@ -18,8 +20,16 @@ export default function Home() {
         {/*</h1>*/}
 
         <h1 className={styles.title}>
-          Welcome to K-Ota <Link href="/Home"><a>{'>'}</a></Link>
+          Welcome to K-Ota
         </h1>
+        <div className={styles.card}>
+          <p>
+            <span>{'<Link />'}를 이용한 이동</span> <Link href="/Home"><a>이동</a></Link>
+          </p>
+          <p>
+            <span>{'<button/> 에 Router.push() 메소드'}를 이용한 이동</span> <button onClick={() => Router.push('/Home')}>이동</button>
+          </p>
+        </div>
 
         {/*<p className={styles.description}>*/}
         {/*  Get started by editing{' '}*/}
