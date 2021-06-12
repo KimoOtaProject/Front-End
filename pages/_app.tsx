@@ -6,7 +6,7 @@ import {Wrapper} from '../store';
 
 import {Footer, Header} from "../components/Layout";
 
-function MyApp({ Component, pageProps, router }:AppProps) {
+function MyApp({Component, pageProps, router}:AppProps) {
   return router.pathname === '/'
     ? <Component {...pageProps} router={router}/>
     : (

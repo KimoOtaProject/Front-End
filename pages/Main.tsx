@@ -9,6 +9,7 @@ import {rootState} from "../reducers";
 function Main() {
   const test = useSelector((state:rootState) => state.test);
   const dispatch = useDispatch();
+
   return (
     <main className={style.container}>
       <div className={style.content}>
@@ -18,7 +19,7 @@ function Main() {
           <span>{test.value}</span>
         </div>
         <div>
-          <InputNumber onChange={value => void(dispatch(changeValue(Number(value))))} />
+          <InputNumber onChange={value => dispatch(changeValue(Number(value)))} />
         </div>
       </div>
     </main>
